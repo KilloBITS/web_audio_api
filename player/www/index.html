@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<!-- test project by Ihor Kalinyuk -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Web Player</title>	
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div id="player-block">	
+	<!-- Header of audio player -->
+		<div class="player-head">
+			<div class="audio-data">
+				<div >		
+					<MARQUEE scrollDelay=50 id="name-track">Web audio API</MARQUEE>
+				</div>
+			</div>
+			<div class="audio-controls">
+				<div id="equalizer">
+					<canvas id="oscilloscope" width="200" height="115"></canvas>
+					<div id="glass"></div>
+				</div>
+				<div id="control-btn">
+					<div class="volume-con">
+						<section>	
+							<span class="tooltip"></span>
+							<div id="slider"></div> 
+							<span class="volume"></span> 
+						</section>
+					</div>
+					<div class="control">
+						<button id="prew"></button>
+						<button id="playAudio"></button>
+						<button id="stop"></button>
+						<button id="next"></button>
+					</div>
+				</div>
+				<div class="audio-track">
+					<div class="audio-status">
+						<div id="progress-track-line"></div>
+					</div>
+				</div>	
+			</div>					
+		</div>
+	<!-- Music list -->
+		<div class="player-list">
+			<div id="track-list">
+				<div id="list">	
+					<ul id="products" class="list clearfix">
+						<li class="clearfix tabs">				
+							<a href="#" class="trackname">Dj Ross vs DY - Beat Goes On (In Da Club)</a>
+							<input type="radio" class="plays" name="plays">
+						</li>
+						<li class="clearfix alt tabs">				
+							<a href="#" class="trackname">Eminem - Rap God</a>
+							<input type="radio" class="plays" name="plays">				
+						</li>
+						<li class="clearfix tabs">				
+							<a href="#" class="trackname">Eminem ft. Akon - Smack That (Original Mix)</a>	
+							<input type="radio" class="plays" name="plays">			
+						</li>
+						
+					</ul>
+				</div>				
+			</div>
+		</div>
+	<!-- bottom navigate -->
+		<div class="player-botom">
+			
+		</div>
+	</div>	
+</body>
+	<!-- Scripts -->
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-1.7.2.min.js"></script>
+	<script src="js/jquery-ui-1.8.21.custom.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/index.js"></script>
+</html>
